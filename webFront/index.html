@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>全球电商</title>
+  <!--描述 seo-->
+  <meta name="description" content="秋之北纬">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<!--HTML5 引入了应用程序缓存，这意味着 Web 应用程序可以被缓存，然后在无互联网连接的时候进行访问。-->
+  <link rel="manifest" href="site.webmanifest">
+	<!--确保所有浏览器都能使用h5元素-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--bootstrap样式-->
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <!--文字动画-->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!--图标样式-->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <!--项目模式-->
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lte IE 9]>
+  	<script src="js/jquery.min-1.11.3.js"></script>
+    <script src="js/vendor/html5shiv.js"></script>
+  	<script src="js/vendor/respond.js"></script> 	
+  <![endif]-->
+</head>
+
+<body>
+  <!--login-->
+<nav  class="navbar navbar-inverse" id="topNav">
+	<div class="container-fluid">
+	<div class="container">
+		<p class="navbar-text navbar-left"><a href="html/CompanyProfile.html" target="_blank">公司简介 </a><i class="fa fa-angle-double-right" aria-hidden="true"></i></p>	
+		<a class="navbar-right" data-toggle="modal" href="html/Register.html" target="_blank">&nbsp;|&nbsp;注册 </a>
+		<a class="navbar-right" data-toggle="modal" href="html/Login.html">登录</a>
+	</div>
+
+	</div>
+</nav>
+<!--导航开始-->  	
+<nav class="navbar navbar-default navHeader"> 		
+  <div class="container-fluid">
+    <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img class="logoImg" src="images/logo.png" alt="logo"/>
+      </a>
+    </div>
+     <!--导航下拉菜单-->
+    <div class="collapse navbar-collapse" id="menu-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+        		
+          <a href="#" class="dropdown-toggle Navtitle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          	<img src="images/dh1.png" alt="电商图标"/>电商市场<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">1111</a></li>
+            <li><a href="#">2222</a></li>
+            <li><a href="#">3333</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">4444</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">更多</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle Navtitle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          	<img src="images/dh2.png" alt="解决图标"/>解决方案<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">2222</a></li>
+            <li><a href="#">11111</a></li>
+            <li><a href="#">3333</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">4444</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">更多</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--搜索-->
+      <form class="navbar-form navbar-right">
+       <div class="input-group">
+	      <input type="text" class="form-control" placeholder="搜索"/>
+	      <span class="input-group-btn">
+	        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+	      </span>
+	    </div>
+      </form>	      
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <!--导航结束-->
+  <!--轮播开始-->
+  <div id="carouselBox" class="carousel slide" data-ride="carousel">
+	  <!--控制圆点-->
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselBox" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselBox" data-slide-to="1"></li>
+	    <li data-target="#carouselBox" data-slide-to="2"></li>
+	  </ol>
+	
+	  <!--banner图-->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active">
+	      <img src="images/banner.jpg" alt="banner1">
+	    </div>
+	    <div class="item">
+	      <img src="images/banner.jpg" alt="banner2">
+	    </div>
+	    <div class="item">
+	      <img src="images/banner.jpg" alt="banner3">
+	    </div>
+	  </div>
+	
+	  <!--控制箭头 -->
+	  <a class="left carousel-control" href="#carouselBox" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carouselBox" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+  <!--轮播结束-->
+  <div class="space"></div>
+  <!--六组图文开始-->
+  <div class="container imgText">
+  	<div class="row firstRow">
+  		<div class="col-lg-4 col-md-4 col-ms-4 imgTextlist">
+  			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <img src="images/icon1.png" alt="">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h3>全球渠道建设</h3>
+				<p>给你最专业,最值得信赖的<br/>一站式服务平台</p>
+			  </div>
+			</div>
+  		</div>
+  		<div class="col-lg-4 col-md-4 col-ms-4 imgTextlist">
+  			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <img src="images/icon2.png" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			   	<h3>大牌电商经销</h3>
+				<p>给你最专业,最值得信赖的<br/>一站式服务平台</p>
+			  </div>
+			</div>
+  		</div>
+  		<div class="col-lg-4 col-md-4 col-ms-4 imgTextlist">
+  			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <img src="images/icon3.png" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h3>旗下自有品牌运营</h3>
+				<p>给你最专业,最值得信赖的<br/>一站式服务平台</p>
+			  </div>
+			</div>
+  		</div>
+  	</div>
+  	<div class="row secondRow">
+  		<div class="col-lg-4 col-md-4 col-ms-4 imgTextlist">
+  			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <img src="images/icon4.png" alt="">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h3>电商运营</h3>
+				<p>给你最专业,最值得信赖的<br/>一站式服务平台</p>
+			  </div>
+			</div>
+  		</div>
+  		<div class="col-lg-4 col-md-4 col-ms-4 imgTextlist">
+  			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <img src="images/icon5.png" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			   	<h3>技术软件</h3>
+				<p>给你最专业,最值得信赖的<br/>一站式服务平台</p>
+			  </div>
+			</div>
+  		</div>
+  		<div class="col-lg-4 col-md-4 col-ms-4 imgTextlist">
+  			<div class="media">
+			  <div class="media-left media-middle">
+			    <a href="#">
+			      <img src="images/icon6.png" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h3>电商培训</h3>
+				<p>给你最专业,最值得信赖的<br/>一站式服务平台</p>
+			  </div>
+			</div>
+  		</div>
+  	</div>
+  </div>
+  <!--六组图文结束-->
+  <div class="space"></div>
+  <!--北纬全球电商市场开始-->
+  	<div class="container World">
+  		<div class="row">
+  			<div class="col-lg-6 col-md-6 col-ms-6 left">
+  				<div class="jumbotron">
+				     <h2>北纬全球电商市场</h2>
+							<p>大牌分销、自有品牌<br />代运营招商合作</p>
+						  <a class="btn-lg" href="html/GlobalEcommerce.html" role="button">了解更多 <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+						  <img class="ebImg" src="images/eb.png" alt="全球"/>
+					</div>
+  			</div>
+  			<div class="col-lg-6 col-md-6 col-ms-6 right">
+  				<div><img class="eaImg" src="images/ea.jpg" alt="运输"/></div>
+  				<div class="jumbotron secjumbotron">
+					  <h2>北纬全球渠道建设<br/>旗下自有品牌运营<br/>大牌电商经销</h2>
+					  <p>电商市场产品与解决方案</p>
+							  <a class="btn-lg" href="html/GlobalEcommerce.html" role="button">了解更多 <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+					</div>
+  			</div>
+  		</div>
+  	</div>
+
+  <!--北纬全球电商市场结束-->	
+  <div class="space"></div>
+  <!--2018建设开始-->
+  <div class="container Bulid">	
+  	<div class="row">
+	  	<div class="col-md-12 col-ms-12">
+	  		<img src="images/fa.jpg" alt="2018图"/>
+	  	</div>
+	  </div>
+  </div>
+  <!--2018建设结束-->
+  <div class="space"></div>
+  <!--公司活动开始-->
+  <div class="container companyActive">	
+  	<h1 class="text-center">公司活动</h1>
+  	 <div class="minspace"></div>
+  	<div class="row">
+  		<div class="col-md-6 companyImg">
+  			<img src="images/gi.jpg" alt="企业活动图"/>
+  		</div>
+  		<div class="col-md-6 companyIext">
+  			<div class="jumbotron">
+					  <h2>2018年北纬员工大会</h2>
+						<h4>中国·福州 | 2018年1月1日</h4>
+						<div class="minspace"></div>
+						<p>福州秋之北纬电子商务有限公司坐落于环境优美、交通便利的福州软件园。是一家专注于服装鞋帽等类目的电子商务运营以及营销推广的第三方服务商。</p>
+						<a class="btn-lg" href="html/CompanyActive.html" role="button">了解更多 <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+					</div>
+  		</div>
+  	</div>
+  </div>
+  <!--公司活动结束-->
+  
+  <div class="space"></div>
+  <!--成功案例开始-->
+  <div class="container Stories">	
+  	<h1 class="text-center">成功案例</h1>
+  	<p  class="text-center">
+  		<a class="btn-lg" href="html/CompanyCases.html" role="button">了解更多 <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+  	</p>
+  	<div class="minspace"></div>
+  	<div class="row">
+  		<div class="col-md-4 col-ms-4">
+		  <div class="thumbnail">
+	      <img src="images/1.jpg" alt="电商"/>
+	      <div class="caption">
+	        <h3 class="text-center">完成A轮电商培训</h3>
+	        <p class="text-center">商业故事<br/>……</p>		      
+	      </div>
+		       
+		    <!--遮罩层开始-->
+				<a href="#" class="overlay" data-toggle="modal" data-target="#stores-1">
+					<i class="fa fa-search-plus"></i>
+					<span>电商培训</span>
+				</a>  
+			</div>
+	    <a href="#" class="btn btn-default btn-block detailBtn" data-toggle="modal" data-target="#stores-1">查看详情</a>
+	    <!--模态框开始-->
+			<div class="modal fade" id="stores-1">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">电商培训</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<h3>电商培训 内容描述</h3>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			xxxx……
+			      		</div>
+			      		<div class="col-md-6">
+			      				  <img src="images/1.jpg" alt="电商"/>
+			      		</div>
+			      	</div>
+			      </div>			      
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+				<!--模态框结束--> 
+  		</div>
+  		<div class="col-md-4 col-ms-4">
+  			<div class="thumbnail">
+	      <img src="images/2.jpg" alt="电商"/>
+	      <div class="caption">
+	        <h3 class="text-center">与一线品牌达成商业合作</h3>
+	        <p class="text-center">商业故事<br/>……</p>		      
+	      </div>
+		       
+		    <!--遮罩层开始-->
+				<a href="#" class="overlay" data-toggle="modal" data-target="#stores-2">
+					<i class="fa fa-search-plus"></i>
+					<span>商业合作</span>
+				</a>  
+			</div>
+	    <a href="#" class="btn btn-default btn-block detailBtn" data-toggle="modal" data-target="#stores-2">查看详情</a>
+	    <!--模态框开始-->
+			<div class="modal fade" id="stores-2">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">商业合作</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<h3>商业合作 内容描述</h3>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			xxxx……
+			      		</div>
+			      		<div class="col-md-6">
+			      				  <img src="images/2.jpg" alt="电商"/>
+			      		</div>
+			      	</div>
+			      </div>			      
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+				<!--模态框结束-->
+  		</div>
+  		<div class="col-md-4 col-ms-4">
+  			<div class="thumbnail">
+	      <img src="images/3.jpg" alt="电商"/>
+	      <div class="caption">
+	        <h3 class="text-center">双11店铺运营营业额突破</h3>
+	        <p class="text-center">商业故事<br/>……</p>		      
+	      </div>
+		       
+		    <!--遮罩层开始-->
+				<a href="#" class="overlay" data-toggle="modal" data-target="#stores-3">
+					<i class="fa fa-search-plus"></i>
+					<span>店铺运营</span>
+				</a>  
+			</div>
+	    <a href="#" class="btn btn-default btn-block detailBtn" data-toggle="modal" data-target="#stores-3">查看详情</a>
+	    <!--模态框开始-->
+			<div class="modal fade" id="stores-3">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title">店铺运营</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<h3>店铺运营 内容描述</h3>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			xxxx……
+			      		</div>
+			      		<div class="col-md-6">
+			      				  <img src="images/3.jpg" alt="电商"/>
+			      		</div>
+			      	</div>
+			      </div>			      
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+				<!--模态框结束-->
+  		</div>
+  	</div>
+  </div>
+  <!--成功案例结束-->
+  <div class="space"></div>
+  <!--近期新闻开始-->
+  <div class="container News">	
+  	<h1 class="text-center">近期新闻</h1>
+  	<div class="minspace"></div>
+  	<div class="row">
+  		<div class="col-md-6 col-ms-6">
+  			<div class="thumbnail">
+		      <img src="images/new.png" alt="新闻图" />
+		      <div class="caption">
+		      	<span>新闻 | 2018年5月10日</span>
+		        <h3>公司始终秉承"为公司创造价值"的服务宗旨</h3>		        
+		       	<a class="btn-lg" href="html/CompanyNews.html" role="button">了解更多 <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+		      </div>
+		    </div>
+  		</div>
+  		<div class="col-md-6 col-ms-6">
+  		<!--折叠-->
+  			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default NewsTab">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="active">
+				        	<b>01</b>
+				          	<span>新闻 | 2018年5月10日</span>
+					    		<h4>公司始终秉承"为公司创造价值"的服务宗旨</h4>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+				       <p>11111</p> 
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default NewsTab">
+				    <div class="panel-heading" role="tab" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				         	<b>02</b>
+				          <span>新闻 | 2018年5月10日</span>
+					    		<h4>公司始终秉承"为公司创造价值"的服务宗旨</h4>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="panel-body">
+				       	<p>22222</p> 
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default NewsTab">
+				    <div class="panel-heading" role="tab" id="headingThree">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				         <b>03</b>
+				         <span>新闻 | 2018年5月10日</span>
+					    	<h4>公司始终秉承"为公司创造价值"的服务宗旨</h4>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				        <p>3333</p> 
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default NewsTab">
+				    <div class="panel-heading" role="tab" id="headingfour">
+				      <h4 class="panel-title">
+				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+				          <b>04</b>
+				          <span>新闻 | 2018年1月1日</span>
+					    		<h4>公司始终秉承"为客户创造价值"的服务价值</h4>
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				        <p>4444</p> 
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+  		</div>
+  	</div>
+  </div>
+  <!--近期新闻结束-->
+  <div class="space"></div>
+  <!--底部开始-->
+  <footer class="footers">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-3 col-xs-6">
+  				<h3 class="text-center">关于北纬</h3>
+  				<ul>
+  					<li><a href="#">公司信息</a></li>
+  					<li><a href="#">发展历程</a></li>
+  					<li><a href="#">企业资讯</a></li>
+  					<li><a href="#">企业文化</a></li>
+  					<li><a href="#">企业业务</a></li>
+  				</ul>
+  			</div>
+  			<div class="col-md-3 col-xs-6">
+  				<h3 class="text-center">全球电商</h3>
+  				<ul>
+  					<li><a href="#">自有品牌</a></li>
+  					<li><a href="#">大牌分销</a></li>
+  					<li><a href="#">代运营招商合作</a></li>
+  					<li><a href="#">项目投资者</a></li>
+  					<li><a href="#">项目合作者</a></li>
+  				</ul>
+  			</div>
+  			<div class="col-md-3 col-xs-6">
+  				<h3 class="text-center">人力资源</h3>
+  				<ul>
+  					<li><a href="#">电商培训</a></li>
+  					<li><a href="#">诚聘英才</a></li>
+  				</ul>
+  			</div>
+  			<div class="col-md-3 col-xs-6">
+  				<h3 class="text-center">技术软件</h3>
+  				<ul>
+  					<li><a href="#">网站建设</a></li>
+  					<li><a href="#">消费者技术支持</a></li>
+  					<li><a href="#">运营商技术支持</a></li>
+  					<li><a href="#">合作者技术支持</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  		<div class="row footerow">
+  			<div class="col-md-12">
+  				<h3>相关网站</h3>
+  				<ul class="list-inline uline">
+  					<li><a href="#">北纬京东店铺</a></li>
+  					<li><a href="#">北纬京东店铺</a></li>
+  					<li><a href="#">北纬京东店铺</a></li>
+  					<li><a href="#">北纬京东店铺</a></li>
+  					<li><a href="#">北纬京东店铺</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+  		
+  	</div>
+  </footer>
+  
+  <!--回到顶部-->
+  <div class="backTop" onclick="backTop();">
+  		<i class="fa fa-angle-up fa-4x" aria-hidden="true"></i>
+  		<h3>回到<br />顶部</h3>
+  </div>
+  
+  <!--确保所有浏览器都能使用h5元素-->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <!--引入jq-->
+  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <!--让consoe.log能够兼容在IE浏览器中-->
+  <script src="js/plugins.js"></script>
+  <!--bootstrap脚本-->
+  <script src="js/bootstrap.min.js"></script>
+ <!--当前项目脚本-->
+  <script src="js/main.js"></script>
+  
+</body>
+
+</html>

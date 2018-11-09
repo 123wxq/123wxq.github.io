@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>秋之北纬公司简介</title>
+  <meta name="description" content="秋之北纬公司简介">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+  <!--项目模式-->
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <!--[if lte IE 9]>
+  	<script src="../js/jquery.min-1.11.3.js"></script>
+    <script src="../js/vendor/html5shiv.js"></script>
+  	<script src="../js/vendor/respond.js"></script> 	
+  <![endif]-->
+</head>
+	<body style="background-color:#F5F6F8;">
+	<div class="container UserLogin Register">
+	  <div class="row">
+		 <div class="col-lg-6 col-md-8  col-ms-8 col-xs-8 col-lg-offset-3 col-md-offset-2 col-ms-offset-2 col-xs-offset-2">
+			<img src="../images/logo.png" alt="logo" />	
+			<ul id="mytab" class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#person" data-toggle="tab">个人注册</a></li>
+				<li><a href="#company" data-toggle="tab">企业注册</a></li>
+			</ul>
+			<!--个人-->
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="person">
+				<form>
+		          <div class="form-group has-feedback">
+		            <label for="reuserName" class="control-label">用户名 <span>*</span></label>
+		            <input type="text" class="form-control" id="reuserName" placeholder="请输入用户名">
+		            
+		          </div>
+		          <div class="form-group has-feedback">
+		            <label for="repwd" class="control-label">密码 <span>*</span></label>
+		            <input type="password" class="form-control" id="repwd" placeholder="请输入密码">
+		          </div>
+		          <div class="form-group has-feedback">
+		            <label for="recipwd" class="control-label">确认密码 <span>*</span></label>
+		            <input type="password" class="form-control" id="recipwd" placeholder="请再次输入密码">
+		          </div>
+		           <div class="form-group has-feedback">
+		            <label for="reTel" class="control-label">手机 <span>*</span></label>
+		            <input type="tel" class="form-control" id="reTel" placeholder="请输入手机号码">
+		          </div>
+		          <div class="form-group has-feedback">
+		            <label for="email" class="control-label">邮箱 <span>*</span></label>
+		            <input type="email" class="form-control" id="email" placeholder="请输入邮箱账号">
+		          </div>
+		          <div class="form-group">
+			           <input type="submit" class="form-control btn-primary" value="确定"/>
+			        </div>
+			         <p class="text-right">已有账号 <a href="Login.html">去登录<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+		        </form>
+				</div>
+				<!--企业-->
+				<div class="tab-pane fade" id="company">
+				<form>
+		          <div class="form-group has-feedback">
+		            <label for="comName" class="control-label">企业名称 <span>*</span></label>
+		            <input type="text" class="form-control" id="comName" placeholder="请输入用户名">
+		            
+		          </div>
+		           <div class="form-group has-feedback" >
+		            <label for="citys" class="control-label">所在地 <span></span></label>
+		            <div id="citys">
+		            	<select class="province btn" data-value="福建省"></select>
+		            	<select class="city btn" data-value="福州市"></select>
+		            	<select class="area btn" data-value="鼓楼区"></select>
+		            </div>
+		          </div>
+		          <div class="form-group has-feedback">
+		            <label for="comtype" class="control-label">企业类型 <span>*</span></label>
+		           <div class="typeSelect" id="comtype">
+		           	<select class="province btn" value="">
+		           		<option>---请选择---</option>
+		            	<option>企业</option>
+		            	<option>政府及事业单位</option>
+		            	<option>团队</option>
+		            	<option>其他</option>
+		            </select>
+		           </div> 
+		          </div>
+		          <div class="form-group has-feedback">
+		            <label for="scale" class="control-label">企业规模 <span>*</span></label>
+		            <div class="typeSelect">
+		           	<select class="province btn" value="">
+		           		<option>---请选择---</option>
+		            	<option>0-50</option>
+		            	<option>50-100</option>
+		            	<option>100-150</option>
+		            	<option>150以上</option>
+		            </select>
+		           </div> 
+		          </div>
+		          
+		          <div class="form-group has-feedback">
+		            <label for="industry" class="control-label">行业类型 <span></span></label>
+		            <div class="typeSelect">
+		           	<select class="province btn" value="">
+		           		<option>---请选择---</option>
+		            	<option>自主团队</option>
+		            	<option>政府及事业单位</option>
+		            	<option>制造行业</option>
+		            	<option>IT行业</option>
+		            	<option>企业服务业</option>
+		            	<option>其他行业</option>
+		            </select>
+		           </div>
+		          </div>
+		          
+		          <div class="form-group">
+			           <input type="submit" class="form-control btn-primary" value="确定"/>
+			      </div>
+		           <p class="text-right">已有账号 <a href="Login.html">去登录<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+		        </form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="row loginfooter">
+		<div class="col-md-12">
+			 <p class="text-center">©2018  福州秋之北纬电子商务有限公司</p>
+		</div>
+	</div>
+			
+  <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="../js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.cxselect.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script type="text/javascript">
+  	//城市级联
+	$('#citys').cxSelect({
+		url:'../js/cityData.min.json',
+		selects: ['province', 'city', 'area']
+	})
+  </script>
+	</body>
+</html>
